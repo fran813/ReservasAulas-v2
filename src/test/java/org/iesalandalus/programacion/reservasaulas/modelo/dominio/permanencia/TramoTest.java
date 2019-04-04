@@ -1,12 +1,12 @@
 package org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia;
-/*
+
 import static org.junit.Assert.*;
 
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.Tramo;
 import org.junit.Test;
-*/
+
 public class TramoTest {
-/*
+
 	@Test
 	public void identificadoresValidosTest() {
 		Tramo tramo;
@@ -22,10 +22,11 @@ public class TramoTest {
 		assertEquals(1, Tramo.TARDE.ordinal());
 	}
 	
+	
 	@Test
 	public void toStringValidoTest() {
 		assertEquals("Mañana", Tramo.MANANA.toString());
 		assertEquals("Tarde", Tramo.TARDE.toString());
 	}
-*/
+
 }
