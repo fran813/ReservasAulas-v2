@@ -3,42 +3,42 @@ package org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia;
 import java.time.LocalDate;
 
 public class PermanenciaPorTramo extends Permanencia {
-	
+
 	private static final int PUNTOS = 10;
 	private Tramo tramo;
-	
-	public PermanenciaPorTramo(LocalDate dia,Tramo tramo) {	
+
+	public PermanenciaPorTramo(LocalDate dia, Tramo tramo) {
 		super(dia);
 		this.setTramo(tramo);
 	}
-	
-	public PermanenciaPorTramo(String dia,Tramo tramo) {
+
+	public PermanenciaPorTramo(String dia, Tramo tramo) {
 		super(dia);
 		this.setTramo(tramo);
-		
+
 	}
-	
-	public PermanenciaPorTramo(PermanenciaPorTramo permanenciaportramo) {
+
+	public PermanenciaPorTramo(PermanenciaPorTramo permanenciaPorTramo) {
 		super();
-		if (permanenciaportramo == null) {
+		if (permanenciaPorTramo == null) {
 			throw new IllegalArgumentException("No se puede copiar una permanencia nula.");
 		}
-		this.setDia(permanenciaportramo.getDia());
-		this.setTramo(permanenciaportramo.getTramo());
+		this.setDia(permanenciaPorTramo.getDia());
+		this.setTramo(permanenciaPorTramo.getTramo());
 	}
-	
+
 	public Tramo getTramo() {
 		return this.tramo;
 	}
-	
+
 	private void setTramo(Tramo tramo) {
-		
-		if(tramo == null) {
+
+		if (tramo == null) {
 			throw new IllegalArgumentException("El tramo de una permanencia no puede ser nulo.");
 		}
 		this.tramo = tramo;
 	}
-		
+
 	@Override
 	public int getPuntos() {
 		return PUNTOS;
@@ -68,7 +68,7 @@ public class PermanenciaPorTramo extends Permanencia {
 
 	@Override
 	public String toString() {
-		return "[dia="+dia.format(FORMATO_DIA)+", tramo=" + tramo + "]";
+		return "[dia=" + dia.format(FORMATO_DIA) + ", tramo=" + tramo + "]";
 	}
-	
+
 }
