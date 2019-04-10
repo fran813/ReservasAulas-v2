@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia;
+ package org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
@@ -24,7 +24,7 @@ public abstract class Permanencia {
 
 
 	public LocalDate getDia() {
-		return dia;
+		return this.dia;
 	}
 
 	protected void setDia(LocalDate dia) {
@@ -49,5 +49,16 @@ public abstract class Permanencia {
 	}
 	public abstract int getPuntos();
 	
+	@Override
+    public abstract String toString();
 
+	@Override
+	public abstract int hashCode();
+
+	@Override
+	public abstract boolean equals(Object obj);
+	
+	
+	
+	
 }
