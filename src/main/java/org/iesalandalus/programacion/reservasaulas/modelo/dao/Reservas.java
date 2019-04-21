@@ -37,12 +37,12 @@ public class Reservas {
 	}
 
 	private List<Reserva> copiaProfundaReservas(List<Reserva> reservas) {
-		
+
 		List<Reserva> otrasReservas = new ArrayList<>();
 		for (Reserva reserva : reservas) {
 			otrasReservas.add(new Reserva(reserva));
-		}  
-		        return otrasReservas;
+		}
+		return otrasReservas;
 	}
 
 	public List<Reserva> getReservas() {
@@ -103,7 +103,7 @@ public class Reservas {
 			puntosGastados += reser.getPuntos();
 		}
 		return puntosGastados + reserva.getPuntos();
-		
+
 	}
 
 	private List<Reserva> getReservasProfesorMes(Profesor profesor, LocalDate dia) {
