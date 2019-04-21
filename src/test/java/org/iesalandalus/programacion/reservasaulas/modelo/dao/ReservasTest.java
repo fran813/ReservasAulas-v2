@@ -1,17 +1,14 @@
 package org.iesalandalus.programacion.reservasaulas.modelo.dao;
-/*
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
-
 import javax.naming.OperationNotSupportedException;
-
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Aula;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Profesor;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.Reserva;
@@ -20,9 +17,9 @@ import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.Pe
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.PermanenciaPorTramo;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.Tramo;
 import org.junit.Test;
-*/
+
 public class ReservasTest {
-/*	
+
 	private static final String NOMBRE_PROFESOR1 = "José Ramón";
 	private static final String NOMBRE_PROFESOR2 = "Andrés";
 	private static final String CORREO = "a@b.cc";
@@ -57,8 +54,6 @@ public class ReservasTest {
 	private static final Reserva RESERVA3 = new Reserva(PROFESOR1, AULA2, PERMANENCIA1);
 	private static final Reserva RESERVA4 = new Reserva(PROFESOR1, AULA2, PERMANENCIA2);
 	private static final Reserva RESERVA5 = new Reserva(PROFESOR2, AULA1, PERMANENCIA1);
-
-
 	@Test
 	public void constructorDefectoTest() {
 		Reservas reservas = new Reservas();
@@ -451,5 +446,5 @@ public class ReservasTest {
 			assertEquals("No se puede consultar la disponibilidad de una permanencia nula.", e.getMessage());
 		}
 	}
-*/
+
 }
