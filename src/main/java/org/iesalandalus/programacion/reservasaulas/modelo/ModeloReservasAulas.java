@@ -8,7 +8,6 @@ import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.Pe
 
 public class ModeloReservasAulas implements IModeloReservasAulas {
 
-
 	private Profesores profesores;
 	private Aulas aulas;
 	private Reservas reservas;
@@ -133,7 +132,7 @@ public class ModeloReservasAulas implements IModeloReservasAulas {
 	@Override
 	public void instertarAula(Aula aula) throws OperationNotSupportedException {
 		aulas.insertar(aula);
-		
+
 	}
 
 	@Override
