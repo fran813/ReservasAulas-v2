@@ -6,7 +6,8 @@ import org.iesalandalus.programacion.reservasaulas.modelo.dao.*;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.*;
 import org.iesalandalus.programacion.reservasaulas.modelo.dominio.permanencia.Permanencia;
 
-public class ModeloReservasAulas {
+public class ModeloReservasAulas implements IModeloReservasAulas {
+
 
 	private Profesores profesores;
 	private Aulas aulas;
@@ -127,5 +128,21 @@ public class ModeloReservasAulas {
 	public boolean consultarDisponibilidad(Aula aula, Permanencia permanencia) {
 
 		return reservas.consultarDisponibilidad(aula, permanencia);
+	}
+
+	@Override
+	public void instertarAula(Aula aula) throws OperationNotSupportedException {
+		aulas.insertar(aula);
+		
+	}
+
+	@Override
+	public int getNumReservas() {
+		return reservas.getNumReservas();
+	}
+
+	@Override
+	public List<Reserva> getReservasAula(Aula aula) {
+		return reservas.getReservasAula(aula);
 	}
 }
